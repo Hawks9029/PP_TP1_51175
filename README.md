@@ -32,11 +32,11 @@ Implementación en Java bajo el paradigma de Programación Orientada a Objetos (
 
 &#x20; - Incorporación de relaciones entre clases:
 
-&#x20;   - \*\*Agregación:\*\* `Sala` vinculada al evento (con existencia independiente).
+&#x20;   - Agregación: `Sala` vinculada al evento (con existencia independiente).
 
-&#x20;   - \*\*Composición:\*\* Colección de actividades administradas por el evento.
+&#x20;   - Composición: Colección de actividades administradas por el evento.
 
-&#x20;   - \*\*Asociación:\*\* Gestión de inscripciones vinculando estudiantes con cada actividad.
+&#x20;   - Asociación: Gestión de inscripciones vinculando estudiantes con cada actividad.
 
 
 
