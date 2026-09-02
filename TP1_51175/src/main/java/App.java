@@ -17,9 +17,9 @@ public class App {
         System.out.println("======================");
 
         while (continuar){
-            System.out.println("Ingese legajo del estudiante: ");
+            System.out.println("Ingrese legajo del estudiante: ");
             String legajo = scanner.nextLine();
-            System.out.println("Ingese nombre y apellido del estudiante: ");
+            System.out.println("Ingrese nombre y apellido del estudiante: ");
             String apenomb = scanner.nextLine();
             estudiantes.add(new Estudiante(legajo, apenomb));
             System.out.println("desea crear otro estudiante  S/N?");
@@ -33,9 +33,9 @@ public class App {
         continuar=true;
         while(continuar) {
             /* Se requieren datos por consola para construir un evento */
-            System.out.println("Ingese un titulo para el evento: ");
+            System.out.println("Ingrese un titulo para el evento: ");
             String titulo = scanner.nextLine();
-            System.out.println("Ingese el costo base:  ");
+            System.out.println("Ingrese el costo base:  ");
             double costoBase = scanner.nextDouble();
             scanner.nextLine(); //limpia el Enter pendiente
             System.out.println("El evento tendra costo para los participantes s/n?");
@@ -54,7 +54,7 @@ public class App {
             );
 
 
-            System.out.println("Ingese el nombre de la sala donde se realizará el evento: ");
+            System.out.println("Ingrese el nombre de la sala donde se realizará el evento: ");
             String nombreSala= scanner.nextLine();
             Sala sala = new Sala(id, nombreSala);
             evento.asignarSala(sala);
@@ -64,9 +64,9 @@ public class App {
             System.out.println("================================================================");
             int idActividad=1;
             while (continuar){
-                System.out.println("Ingese el título de la actividad: ");
+                System.out.println("Ingrese el título de la actividad: ");
                 String tituloActividad= scanner.nextLine();
-                System.out.println("Ingese el cupo máximo de estudiantes admitidos para la actividad: ");
+                System.out.println("Ingrese el cupo máximo de estudiantes admitidos para la actividad: ");
                 int cupo= scanner.nextInt();
                 scanner.nextLine(); //Se consume la linea.
                 System.out.println("La actividad es una Charla o un Taller?  (Charla/Taller)? ");
@@ -83,9 +83,9 @@ public class App {
             System.out.println("===============================================================================");
             continuar=true;
             while (continuar){
-                System.out.println("Ingese legajo del estudiante a inscribir: ");
+                System.out.println("Ingrese legajo del estudiante a inscribir: ");
                 String legajo = scanner.nextLine();
-                System.out.println("Ingese id de la Actividad: ");
+                System.out.println("Ingrese id de la Actividad: ");
                 idActividad = scanner.nextInt();
                 scanner.nextLine(); // se consume linea
                 for (Estudiante estudiante: estudiantes){
